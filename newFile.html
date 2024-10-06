@@ -37,3 +37,19 @@
     Copy
     git push -u origin master
     Follow these steps, and your local repository will be added to GitHub.</p>
+
+    <p>When you use:
+
+        bash
+        
+        Copy
+        git push origin branchName
+        You're pushing your branch to the remote repository, but you're not setting any upstream tracking information. This means each time you want to push or pull, you'll need to specify the remote and branch names.
+        
+        Using:
+        
+        bash
+        
+        Copy
+        git push -u origin branchName
+        The -u flag is used to set the upstream branch for the current local branch. This sets up the relationship between your local branch and the remote branch. After doing this once, you can simply use git push or git pull without specifying any branch names because Git will know which remote branch to track.</p>
